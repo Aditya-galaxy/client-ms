@@ -1,6 +1,6 @@
 # Client Management System
 
-A simple client management system built with Python and MySQL. The application provides functionality to manage client records including adding, modifying, deleting, and searching records from the MySQL database. It also includes data visualization capabilities using charts.
+A simple client management system built with Python and MySQL. The application provides functionality to manage client records using CRUD operations to the MySQL database. It also includes data visualization capabilities using charts.
 
 ## Features
 
@@ -20,6 +20,7 @@ A simple client management system built with Python and MySQL. The application p
   - mysql-connector-python
   - matplotlib
   - tkinter
+  - python-dotenv
 
 ## Installation
 
@@ -64,7 +65,7 @@ A simple client management system built with Python and MySQL. The application p
 Run the main application:
 
 ```
-python main.py
+python3 main.py
 ```
 
 Login with default credentials:
