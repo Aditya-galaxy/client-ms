@@ -27,8 +27,8 @@ A simple client management system built with Python and MySQL. The application p
 1. Clone this repository:
 
    ```
-   git clone https://github.com/Aditya-galaxy/client-management.git
-   cd client-management
+   git clone https://github.com/Aditya-galaxy/client-ms.git
+   cd client-ms
    ```
 
 2. Install required packages:
