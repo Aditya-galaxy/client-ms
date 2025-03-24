@@ -27,8 +27,8 @@ A simple client management system built with Python and MySQL. The application p
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/Aditya-galaxy/client-management.git
-   cd client_ms
+   git clone https://github.com/Aditya-galaxy/client-ms.git
+   cd client-ms
    ```
 
 2. Create and activate virtual environment:
@@ -41,7 +41,11 @@ A simple client management system built with Python and MySQL. The application p
    # On macOS/Linux:
    source .venv/bin/activate
    # On Windows:
+   <<<<<<< HEAD
    .venv\Scripts\activate
+   =======
+   # .venv\Scripts\activate
+   >>>>>>> 9243f4e (Update README.md)
    ```
 
 3. Install required packages:
@@ -96,13 +100,21 @@ A simple client management system built with Python and MySQL. The application p
    # On macOS/Linux:
    source .venv/bin/activate
    # On Windows:
+   <<<<<<< HEAD
    .venv\Scripts\activate
+   =======
+   # .venv\Scripts\activate
+   >>>>>>> 9243f4e (Update README.md)
    ```
 
 2. Run the main application:
 
    ```bash
+   <<<<<<< HEAD
    python3 main.py
+   =======
+   python main.py
+   >>>>>>> 9243f4e (Update README.md)
    ```
 
 3. Login with default credentials:
