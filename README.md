@@ -41,7 +41,7 @@ A simple client management system built with Python and MySQL. The application p
    # On macOS/Linux:
    source .venv/bin/activate
    # On Windows:
-   # .venv\Scripts\activate
+   .venv\Scripts\activate
    ```
 
 3. Install required packages:
@@ -96,13 +96,13 @@ A simple client management system built with Python and MySQL. The application p
    # On macOS/Linux:
    source .venv/bin/activate
    # On Windows:
-   # .venv\Scripts\activate
+   .venv\Scripts\activate
    ```
 
 2. Run the main application:
 
    ```bash
-   python main.py
+   python3 main.py
    ```
 
 3. Login with default credentials:
