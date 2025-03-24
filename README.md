@@ -35,17 +35,13 @@ A simple client management system built with Python and MySQL. The application p
 
    ```bash
    # Create virtual environment
-   python -m venv .venv
+   python3 -m venv .venv
 
    # Activate virtual environment
    # On macOS/Linux:
    source .venv/bin/activate
    # On Windows:
-   <<<<<<< HEAD
    .venv\Scripts\activate
-   =======
-   # .venv\Scripts\activate
-   >>>>>>> 9243f4e (Update README.md)
    ```
 
 3. Install required packages:
@@ -100,21 +96,13 @@ A simple client management system built with Python and MySQL. The application p
    # On macOS/Linux:
    source .venv/bin/activate
    # On Windows:
-   <<<<<<< HEAD
    .venv\Scripts\activate
-   =======
-   # .venv\Scripts\activate
-   >>>>>>> 9243f4e (Update README.md)
    ```
 
 2. Run the main application:
 
    ```bash
-   <<<<<<< HEAD
    python3 main.py
-   =======
-   python main.py
-   >>>>>>> 9243f4e (Update README.md)
    ```
 
 3. Login with default credentials:
