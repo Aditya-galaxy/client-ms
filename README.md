@@ -1,6 +1,6 @@
 # Client Management System
 
-A simple client management system built with Python and MySQL. The application provides functionality to manage client records using CRUD operations to the MySQL database. It also includes data visualization capabilities using charts.
+A simple client management system built with Python and MySQL. The application provides functionality to manage client records including adding, modifying, deleting, and searching records from the MySQL database. It also includes data visualization capabilities using charts.
 
 ## Features
 
@@ -15,7 +15,7 @@ A simple client management system built with Python and MySQL. The application p
 ## Requirements
 
 - Python 3.10 or higher
-- MySQL
+- MySQL 8.0 or higher
 - Required Python libraries:
   - mysql-connector-python
   - matplotlib
@@ -26,20 +26,33 @@ A simple client management system built with Python and MySQL. The application p
 
 1. Clone this repository:
 
-   ```
-   git clone https://github.com/Aditya-galaxy/client-ms.git
-   cd client-ms
+   ```bash
+   git clone https://github.com/Aditya-galaxy/client-management.git
+   cd client_ms
    ```
 
-2. Install required packages:
+2. Create and activate virtual environment:
 
+   ```bash
+   # Create virtual environment
+   python -m venv .venv
+
+   # Activate virtual environment
+   # On macOS/Linux:
+   source .venv/bin/activate
+   # On Windows:
+   # .venv\Scripts\activate
    ```
+
+3. Install required packages:
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-3. Set up MySQL database:
+4. Set up MySQL database:
 
-   ```
+   ```bash
    mysql -u root -p
    ```
 
@@ -58,24 +71,89 @@ A simple client management system built with Python and MySQL. The application p
    );
    ```
 
-4. Configure database connection in .env file or add details to `database/db_config.py`
+5. Configure database connection:
+
+   Create a `.env` file in the project root:
+
+   ```bash
+   touch .env
+   ```
+
+   Add database configuration to `.env`:
+
+   ```
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=your_password
+   DB_NAME=Client_Management
+   ```
 
 ## Usage
 
-Run the main application:
+1. Ensure virtual environment is activated:
 
-```
-python3 main.py
-```
+   ```bash
+   # On macOS/Linux:
+   source .venv/bin/activate
+   # On Windows:
+   # .venv\Scripts\activate
+   ```
 
-Login with default credentials:
+2. Run the main application:
 
-- Username: 1
-- Password: 2
+   ```bash
+   python main.py
+   ```
+
+3. Login with default credentials:
+   - Username: 1
+   - Password: 2
 
 ## Project Structure
 
-- `main.py`: Entry point of the application
-- `database/`: Database configuration and connection management
-- `forms/`: UI forms including login and record adding forms
-- `operations/`: Core functionality modules (display, search, modify, delete, graphs)
+```
+client_ms/
+├── README.md
+├── requirements.txt
+├── .env
+├── .gitignore
+├── main.py              # Application entry point
+├── database/           # Database configuration
+│   ├── __init__.py
+│   └── db_config.py
+├── forms/             # UI forms
+│   ├── __init__.py
+│   ├── login_form.py
+│   └── add_record_form.py
+└── operations/        # Core functionality
+    ├── __init__.py
+    ├── display.py
+    ├── search.py
+    ├── modify.py
+    ├── delete.py
+    └── graphs.py
+```
+
+## Development
+
+1. To modify database configuration, edit `.env` file
+2. For testing, use the provided dummy data or add your own records
+3. Changes to UI can be made in respective form files
+4. Core operations are modular and can be extended
+
+## Troubleshooting
+
+1. Database connection issues:
+
+   - Verify MySQL is running
+   - Check credentials in `.env` file
+   - Ensure database and table exist
+
+2. Package issues:
+
+   - Verify virtual environment is activated
+   - Reinstall requirements: `pip install -r requirements.txt`
+
+3. Display issues:
+   - Check Tkinter installation
+   - Verify Python version compatibility
